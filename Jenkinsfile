@@ -1,3 +1,12 @@
+stage('Debug') {
+    steps {
+        sh 'whoami'
+        sh 'id'
+        sh 'groups'
+        sh 'which docker'
+        sh 'docker ps'
+    }
+}
 pipeline {
     agent any
 
